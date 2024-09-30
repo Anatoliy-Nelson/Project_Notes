@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Notes</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <header class="header">
+      <div class="notes-section"></div>
+        <div class="total-notes">
+          <span class="total-notes-text">Всего заметок: </span
+          ><span class="total-count">5</span>
+        </div>
+        <div class="notes-section-icon"></div>
+    </header>
+    <main>
+      <form class="note-form" name="notes">
+        <div class="input-section"></div>
+          <span class="label">Название заметки</span>
+            <input type="text" placeholder="Название  новой заметки ..." class="note-name">
+        </div>
+        <div class="big-note-form">
+          <div class="big-input-section">
+            <span class="label">Описание новой заметки</span>
+              <textarea placeholder="Напишите описание новой заментки ..." class="note-text"></textarea>
+          </div>
+          <div>
+            <fieldset class="fieldset"></fieldset>
+            <legend class="label">Выберите цвет заметки</legend>
+            <ul class="radio-list">
+              <li>
+                <input checked class="radio" type="radio" name="color" value="yellow" aria-label="yellow" />
+              </li>
+              <li>
+                <input class="radio" type="radio" name="color" value="red" aria-label="red" />
+              </li>
+              <li>
+                <input class="radio" type="radio" name="color" value="green" aria-label="green" />
+              </li>
+              <li>
+                <input class="radio" type="radio" name="color" value="blue" aria-label="blue" />
+              </li>
+              <li>
+                <input class="radio" type="radio" name="color" value="purple" aria-label="purple" />
+              </li>
+            </ul>
+          </fieldset>
+    
+          <!-- your code -->
+          <input 
+            type="submit" 
+            placeholder="Добавить заметку" 
+            class="button-blue" 
+            value="Добавить заметку"
+            > 
+          </div>
+        </div>
+      </form>
+      <div class="filter-box">
+        <input type="checkbox" class="checkbox-inactive">
+        <span class="show-favorites">Показать только избранные заметки</span>
+      <ul class="notes-list">
+        <!-- Сюда будут рендерится заметки из JavaScript -->
+        <!-- <p>У вас нет еще ни одной заметки<br>
+Заполните поля выше и создайте свою первую заметку!</p> -->
+        <div class="frame-13"></div>
+          <div class="frame-14">
+            <span class="flexbox-css">Flexbox (CSS)</span>
+            <div class="frame-15">
+              <div class="heart-active"><div class="vector-16"></div></div>
+              <div class="trash"></div>
+            </div>
+          </div>
+          <div class="frame-17">
+            <span class="lorem-ipsum"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.</span
+            >
+          </div>
+        </div>
+        <div class="frame-18">
+          <div class="frame-19">
+            <span class="objects-js">Объекты (JavaScript)</span>
+            <div class="frame-1a">
+              <div class="heart-inactive"><div class="vector-1b"></div></div>
+              <div class="trash-1c"></div>
+            </div>
+          </div>
+          <div class="frame-1d">
+            <span class="lorem-ipsum-dolor"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
+            >
+          </div>
+      </ul>
+
+      <div class="messages-box">
+        <!-- Сюда будут рендерится информационные сообщения из JavaScript -->
+      </div>
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>
